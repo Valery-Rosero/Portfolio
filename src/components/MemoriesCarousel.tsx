@@ -7,7 +7,6 @@ export default function MemoriesCarousel() {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Datos del carrusel con rutas directas desde public
   const memories = [
     {
       id: 1,
@@ -47,7 +46,6 @@ export default function MemoriesCarousel() {
     }
   ];
 
-  // Detección de dispositivo y auto-play
   useEffect(() => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -97,7 +95,6 @@ export default function MemoriesCarousel() {
         </div>
 
       <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
-        {/* Carrusel de imágenes */}
         <div className="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-[500px]">
           {memories.map((memory, index) => (
             <div 
@@ -111,7 +108,7 @@ export default function MemoriesCarousel() {
                 alt={memory.title}
                 fill
                 className="object-cover rounded-lg"
-                priority={index < 3} // Prioriza las primeras imágenes
+                priority={index < 3} 
                 sizes={isMobile ? "100vw" : "50vw"}
                 quality={isMobile ? 75 : 85}
                 unoptimized={process.env.NODE_ENV !== 'production'}
@@ -119,7 +116,6 @@ export default function MemoriesCarousel() {
             </div>
           ))}
           
-          {/* Controles móviles */}
           <div className="lg:hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
             {memories.map((_, index) => (
               <button
@@ -135,7 +131,6 @@ export default function MemoriesCarousel() {
         </div>
 
         <div className="w-full lg:w-1/2 bg-beige/90 border-2 border-morado rounded-xl shadow-lg flex flex-col">
-          {/* Contenido principal */}
           <div className="p-8 flex-1">
             <h3 className="text-3xl font-amiri text-morado mb-4 underline decoration-morado/30">
               {memories[activeIndex].title}
@@ -145,7 +140,6 @@ export default function MemoriesCarousel() {
             </p>
           </div>
 
-          {/* Sección de controles ABAJO */}
           <div className="border-t border-morado/20 p-6">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-4">

@@ -8,7 +8,7 @@ import ContactSection from '@/components/ContactSection';
 import { useEffect } from 'react';
 
 export default function Home() {
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     const section = document.querySelector(sectionId);
     if (section) {
       section.scrollIntoView({

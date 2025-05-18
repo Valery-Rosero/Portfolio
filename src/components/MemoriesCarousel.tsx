@@ -86,7 +86,7 @@ export default function MemoriesCarousel() {
     <section 
       id="memories"
       aria-labelledby="memories-heading"
-      className="w-full max-w-6xl px-4 sm:px-6 py-8 md:py-12 mx-auto">
+      className="w-full max-w-6xl px-4 sm:px-6 py-8 md:py-10 mx-auto">
       <div className="text-center mb-12">
             <span className="bg-beige px-4 py-2 md:px-8 md:py-3 rounded-full border-2 border-morado shadow-lg md:shadow-xl text-3xl md:text-4xl lg:text-5xl font-amiri text-morado text-center mb-8 md:mb-10 mx-4 sm:mx-8 md:mx-20 lg:mx-40 xl:mx-60">
                 Recuerdos que Moldean

@@ -41,8 +41,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-fondoprincipal">
-      <Navbar scrollToSection={scrollToSection} />
-
+      <Navbar/>
       <main className="flex flex-col py-20 items-center space-y-12 md:space-y-24 pb-12 md:pb-20">
         <HomeSection scrollToSection={scrollToSection} />
         <AboutSection />

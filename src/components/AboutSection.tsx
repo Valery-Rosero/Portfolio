@@ -15,11 +15,11 @@ export default function AboutSection() {
           
           <blockquote className="relative z-10 text-center mb-8">
             <p className="text-xl md:text-2xl text-morado font-amiri leading-relaxed">
-              <span className="text-3xl font-bold absolute -left-2 -top-2 text-morado/20">"</span>
+              <span className="text-3xl font-bold absolute -left-2 -top-2 text-morado/20">&ldquo;</span>
               Transformo <span className="font-bold underline decoration-morado/30">problemas complejos</span> en 
               <span className="font-bold underline decoration-morado/30"> soluciones elegantes</span>, 
               ya sea con código, pinceles o palabras.
-              <span className="text-3xl font-bold absolute -right-2 -bottom-2 text-morado/20">"</span>
+              <span className="text-3xl font-bold absolute -right-2 -bottom-2 text-morado/20">&ldquo;</span>
             </p>
           </blockquote>
 
